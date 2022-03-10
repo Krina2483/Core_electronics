@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Core Electronics</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+    <main>
+	<nav class="mainnav" style="border: 1px solid gray; display: flex; background-color: #efefef;">
+	   <a class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+		<button class="openbtn" onclick="openNav()">&#9776;</button>
+	   </a>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasExampleLabel"><u>Shop By Category</u></h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="canvas-list">
+                    <a href="Files/Accessories/accessories.html">&#10095; Accessories</a><br/>
+                    <a href="Files/Television/Television.html">&#10095; Television</a><br/>
+                    <a href="Files/Mobile Phones/Phones.html">&#10095; Mobile Phones</a><br/>
+                    <a href="Files/Computer/Computer.html">&#10095; Computers</a><br/>
+                    <a href="Files/Tablets/tablets.html">&#10095; Tablets</a><br/>
+                    <a href="Files/Home appliances/home.html">&#10095; Home appliances</a><br/>
+                    <a href="Files/Kitchen appliances/Kitchen.html">&#10095; Kitchen appliances</a><br/>
+                    <a href="Files/Audio & video/Audio_video.html">&#10095; Audio & video</a><br/>
+                    <a href="Files/Health & Fitness/Health.html">&#10095; Health & fitness</a><br/>
+                    <a href="Files/Grooming/Grooming.html">&#10095; Grooming & personal care</a><br/>
+                    <a href="Files/Cameras/Cameras.html">&#10095; Cameras & Accessories</a><br/>
+                    <a href="Files/Smart devices/Devices.html">&#10095; Smart devices</a><br/>
+                    <a href="Files/Gaming/Gaming.html">&#10095; Gaming</a><br/>
+                    <a href="Files/Vehicle electronics/vehicle.html">&#10095; Vehicle electronics</a><br/>
+                    <a href="Files/Wearable technology/wearable.html">&#10095; Wearable technology</a>
+                </div>
+                <hr/>
+                <div>
+                    <h3><u>Help & Settings</u></h3>
+                    <div class="canvas-list">
+                        <a href="#">&#10095; Your Account</a><br/>
+                        <a href="#">&#10095; sign in/sign up</a><br/>
+                        <a href="#">&#10095; Customer service</a>
+                    </div>
+                </div>
+                <hr/>
+                <div>
+                    <h3><u>About us</u></h3>
+                    <div class="canvas-list">
+                        <a href="#">&#10095; Our history</a><br/>
+                        <a href="#">&#10095; Our other branches </a><br/>
+                        <a href="#">&#10095; Review of some satisfied customer</a><br/>
+                        <a href="#">&#10095; Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo">
+	        <a href="#" class="texttype">Core</a>
+        </div>
+
+        <div class="container-fluid search">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit"><img class="img1" src="https://image.flaticon.com/icons/png/512/61/61088.png"></button>
+            </form>
+        </div>
+
+        <div class="cart-1">
+            <button class="btn btn-outline-secondary cart"><img class="img2"src="Images/cart.png"></button> 
+        </div>
+
+        <div class="modal-1">
+            <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Orders&nbsp;&#128230;
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">...</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                         abc
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-2">
+            <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+             Sign in/up&nbsp;&nbsp;&#128100;
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Sign in with CORE</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"  aria-current="true" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/slide_1.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/slide_2.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/slide_3.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/slide_4.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/slide_5.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/slide_6.jpeg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <img class="carousel-arrow"src="Images/carousel-arrow-1.png">
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <img class="carousel-arrow"src="Images/carousel-arrow-2.png">
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+        <br/>
+
+        <header>
+            <h1>Categories</h1>
+        </header>
+        <br/>
+
+        <section class="Categories">
+            <div class="product product-1" >
+                    <img class="icon"src="icons/icon_1.svg"><span>&nbsp;</span>
+                    <a href="Files/Mobile Phones/Phones.html">Phones</a>
+            </div>
+
+            <div class="product product-2">
+                <img class="icon"src="icons/icon_2.svg"><span>&nbsp;</span>
+                    <a href="Files/Computer/Computer.html">Laptops</a>
+            </div>
+
+            <div class="product product-3">
+                <img class="icon"src="icons/icon_3.svg"><span>&nbsp;</span>
+                    <a href="Files/Tablets/tablets.html">Tablets</a>
+            </div>
+
+            <div class="product product-4">
+                <img class="icon"src="icons/icon_4.svg"><span>&nbsp;</span>
+                    <a href="Files/Audio & video/Audio_video.html">Audio</a>
+            </div>
+
+            <div class="product product-5">
+                <img class="icon"src="icons/icon_5.svg"><span>&nbsp;</span>
+                    <a href="Files/Television/Television.html">Televisions</a>
+            </div>
+
+            <div class="product product-6">
+                <img class="icon"src="icons/icon_6.svg"><span>&nbsp;</span>
+                    <a href="Files/Home appliances/home.html">Washing machine</a>
+            </div>
+
+            <div class="product product-7">
+                <img class="icon"src="icons/icon_7.svg"><span>&nbsp;</span>
+                    <a href="Files/Kitchen appliances/Kitchen.html">Kitchen appliance</a>
+            </div>
+
+            <div class="product product-8">
+                <img class="icon"src="icons/icon_8.svg"><span>&nbsp;</span>
+                    <a href="Files/Grooming/Grooming.html">Grooming</a>
+            </div>
+
+            <div class="product product-9">
+                <img class="icon"src="icons/icon_9.svg"><span>&nbsp;</span>
+                    <a href="Files/Home appliances/home.html">Refrigerators</a>
+            </div>
+
+            <div class="product product-10">
+                <img class="icon"src="icons/icon_10.svg"><span>&nbsp;</span>
+                    <a href="Files/Wearable technology/wearable.html">Wearables</a>
+            </div>
+
+            <div class="product product-11">
+                <img class="icon"src="icons/icon_11.svg"><span>&nbsp;</span>
+                    <a href="Files/Home appliances/home.html">A.c.</a>
+            </div>
+
+            <div class="product product-12">
+                <img class="icon"src="icons/icon_12.svg"><span>&nbsp;</span>
+                    <a href="Files/Accessories/accessories.html">Accessories</a>
+            </div>
+
+            <div class="product product-13">
+                <img class="icon"src="icons/icon_13.svg"><span>&nbsp;</span>
+                    <a href="Files/Gaming/Gaming.html">Gaming</a>
+            </div>
+
+            <div class="product product-14">
+                <img class="icon"src="icons/icon_14.svg"><span>&nbsp;</span>
+                    <a href="Files/Cameras/Cameras.html">Cameras</a>
+            </div>
+
+            <div class="product product-15">
+                <img class="icon"src="icons/icon_15.svg"><span>&nbsp;</span>
+                    <a href="#brands">Top brands</a>
+            </div>
+        </section>
+        <br/>
+        <br/>
+
+        <div class="container shopping-options"style="background-color: #f3f3f3; border: 1px solid gray; border-radius: 2%;" align="center">
+
+            <div class="container-fluid " align="center" style="padding-top: 10px;">
+                <h3>Shop safely with</h3>
+            </div>
+
+            <br/>
+
+            <div class="container d-flex row">
+                <div class="col-6 " align="center">
+                    <img class="truck" src="Images/truck.png">
+                </div>
+                <div class="col-6" align="center">
+                    <img class="home" src="Images/store.png">
+                </div>
+            </div>
+
+            <br>
+
+            <div class="container d-flex row">
+                <div class="col-6 " align="center">
+                    <h4 href="#">Online shopping</h4>
+                    <button>Enter pin</button>
+                </div>
+                <div class="col-6" align="center">
+                    <h4 href="#">Connect to store</h4>
+                    <button>Register now</button>
+                </div>
+            </div>
+
+            <br>
+
+        </div>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="headings" id="brands">
+        <h1 class="heading-name">Top brands</h1>
+    </div>
+    <br>
+    <div class="slider">
+    <div class="slide-track">
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Samsung.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Mi.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Apple.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Oppo.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Lava.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Lenovo.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Vivo.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Oneplus.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Asus.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Sony.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Dell.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Acer.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Hp.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Panasonic.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Nikon.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Canon.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Lg.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Whirlpool.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Haier.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Bosch.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Philips.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Mitsubishi.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Samsung.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Mi.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Apple.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Oppo.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Lava.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Lenovo.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Vivo.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Oneplus.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Asus.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Sony.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Dell.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Acer.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Hp.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Panasonic.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Nikon.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Canon.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Lg.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Whirlpool.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Haier.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Bosch.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Philips.png" height="130" width="250" alt="" />
+        </div>
+        <div class="slide" style="margin-right: 50px;">
+            <img src="Images/Mitsubishi.png" height="130" width="250" alt="" />
+        </div>
+    </div>
+</div>
+    <br><br><br>
+        <div class="headings">
+            <h1 class="heading-name">Phones</h1>
+            <a href="Files/Mobile Phones/Phones.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card" style="width:55vw;">
+                <picture>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/41+xWzgV8jL.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h4 class="mainpg-card-name">Phone 1</h4>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/41jRzGyDUJL.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h4 class="mainpg-card-name">phone 2</h4>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/41sGASjc4-L.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h4 class="mainpg-card-name">phone 3</h4>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71MHTD3uL4L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h4 class="mainpg-card-name">phone 4</h4>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/51PuFBgBK4L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h4 class="mainpg-card-name">phone 5</h4>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/714QWDxXgNL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h4 class="mainpg-card-name" >phone 6</h4>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61KmcwI8TFS._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h4 class="mainpg-card-name">phone 7</h4>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71KVeQql77S._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h4 class="mainpg-card-name">phone 8</h4>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Laptops</h1>
+            <a href="Files/Computer/Computer.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Laptop 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Laptop 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Laptop 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Laptop 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Laptop 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >Laptop 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Laptop 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Laptop 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Audio</h1>
+            <a href="Files/Audio & Video/Audio_video.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71CM0FCo3BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Audio 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71CM0FCo3BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Audio 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71CM0FCo3BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Audio 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71CM0FCo3BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Audio 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71CM0FCo3BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Audio 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71CM0FCo3BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >Audio 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71CM0FCo3BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Audio 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71CM0FCo3BL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Audio 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Televisions</h1>
+            <a href="Files/Television/television.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">T.v. 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">T.v. 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">T.v. 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">T.v. 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">T.v. 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >T.v. 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">T.v. 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71vZLIfj5yS._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">T.v. 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Washing machine</h1>
+            <a href="Files/Home appliances/home.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71pVSyDJD9L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Machine 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71pVSyDJD9L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Machine 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71pVSyDJD9L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Machine 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71pVSyDJD9L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Machine 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71pVSyDJD9L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Machine 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71pVSyDJD9L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >Machine 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71pVSyDJD9L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Machine 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71pVSyDJD9L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Machine 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Kitchen appliance</h1>
+            <a href="Files/Kitchen appliances/Kitchen.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61cqMkN3-0L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Oven 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61cqMkN3-0L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Oven 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61cqMkN3-0L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Oven 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61cqMkN3-0L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Oven 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61cqMkN3-0L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Oven 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61cqMkN3-0L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Oven 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61cqMkN3-0L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Oven 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61cqMkN3-0L._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Oven 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Refrigerators</h1>
+            <a href="Files/Kitchen appliances/Kitchen.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/718n2Wv3inL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Refrigerator 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/718n2Wv3inL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Refrigerator 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/718n2Wv3inL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Refrigerator 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/718n2Wv3inL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Refrigerator 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/718n2Wv3inL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Refrigerator 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/718n2Wv3inL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Refrigerator 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/718n2Wv3inL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Refrigerator 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/718n2Wv3inL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Refrigerator 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Wearables</h1>
+            <a href="Files/Wearable technology/wearable.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_03_sbc_v1_564x564_in-en._CB657839320_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Watch 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_03_sbc_v1_564x564_in-en._CB657839320_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Watch 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_03_sbc_v1_564x564_in-en._CB657839320_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Watch 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_03_sbc_v1_564x564_in-en._CB657839320_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Watch 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_03_sbc_v1_564x564_in-en._CB657839320_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Watch 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_03_sbc_v1_564x564_in-en._CB657839320_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Watch 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_03_sbc_v1_564x564_in-en._CB657839320_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Watch 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/31/img21/CEPC/Electronics/Revamp/SBC/xcm_banners_03_sbc_v1_564x564_in-en._CB657839320_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Watch 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">A.C.</h1>
+            <a href="Files/Home appliances/home.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61txU3NE6aL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">A.C. 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61txU3NE6aL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">A.C. 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61txU3NE6aL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">A.C. 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61txU3NE6aL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">A.C. 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61txU3NE6aL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">A.C. 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61txU3NE6aL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">A.C. 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61txU3NE6aL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">A.C. 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/61txU3NE6aL._AC_UY436_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">A.C. 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Accessories</h1>
+            <a href="Files/Accessories/accessories.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/81re+tLZoYL._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Case 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/81re+tLZoYL._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Case 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/81re+tLZoYL._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Case 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/81re+tLZoYL._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Case 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/81re+tLZoYL._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Case 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/81re+tLZoYL._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >Case 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/81re+tLZoYL._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Case 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/81re+tLZoYL._AC_UL640_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Case 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Gaming</h1>
+            <a href="Files/Gaming/Gaming.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71L26Qve3jL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gaming 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71L26Qve3jL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gaming 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71L26Qve3jL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gaming 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71L26Qve3jL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gaming 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71L26Qve3jL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gaming 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71L26Qve3jL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >Gaming 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71L26Qve3jL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gaming 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/71L26Qve3jL._AC_UL640_FMwebp_QL65_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gaming 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Cameras</h1>
+            <a href="Files/Cameras/Cameras.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71lmoEguiAL._AC_UL200_SR200,200_.jpg" alt="">
+                </picture >
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Camera 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71lmoEguiAL._AC_UL200_SR200,200_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Camera 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71lmoEguiAL._AC_UL200_SR200,200_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Camera 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71lmoEguiAL._AC_UL200_SR200,200_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Camera 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71lmoEguiAL._AC_UL200_SR200,200_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Camera 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71lmoEguiAL._AC_UL200_SR200,200_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >Camera 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71lmoEguiAL._AC_UL200_SR200,200_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Camera 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/I/71lmoEguiAL._AC_UL200_SR200,200_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Camera 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Car & accessories</h1>
+            <a href="Files/Vehicle electronics/vehicle.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61sCL37xvlL._SL1080_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Accessory 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61sCL37xvlL._SL1080_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Accessory 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61sCL37xvlL._SL1080_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Accessory 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61sCL37xvlL._SL1080_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Accessory 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61sCL37xvlL._SL1080_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Accessory 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61sCL37xvlL._SL1080_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >Accessory 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61sCL37xvlL._SL1080_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Accessory 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture>
+                    <img src="https://m.media-amazon.com/images/I/61sCL37xvlL._SL1080_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Accessory 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+        <div class="headings">
+            <h1 class="heading-name">Gps & accessories</h1>
+            <a href="Files/Vehicle electronics/vehicle.html"><button class="more-items" align="right">View all</button></a>
+        </div>
+        <section class="product-section">
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71L5lSfJIPS._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gps 1</h3>
+                </div>
+                <div class="button">
+                    <button >Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71L5lSfJIPS._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gps 2</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button>
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71L5lSfJIPS._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gps 3</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71L5lSfJIPS._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gps 4</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71L5lSfJIPS._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gps 5</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71L5lSfJIPS._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name" >Gps 6</h3>
+                </div>
+                <div class="button">
+                    <button>Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71L5lSfJIPS._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gps 7</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button> 
+                </div>
+            </div>
+            <div class="mainpg-card">
+                <picture style="width: 21vw;">
+                    <img src="https://m.media-amazon.com/images/I/71L5lSfJIPS._SL1500_.jpg" alt="">
+                </picture>
+                <div class="detail">
+                    <h3 class="mainpg-card-name">Gps 8</h3>
+                </div>
+                <div class="button">
+                    <button href="#">Add-cart</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container-fluid" style="background-color: #999; height:6.5vh; font-size: 28px; text-align: center;">
+            <a href="#">Back to top</a>
+        </div>
+
+        <footer class="footer-distributed">
+
+               <div class="footer-left">
+
+                    <h3>Core<span>Electronics</span></h3>
+
+                    <p class="footer-links">
+                         <a href="#" class="link-1">Home</a>
+                         
+                         <a href="#">About us</a>
+
+                         <a href="#">Our History</a>
+                    
+                         <a href="#">Privacy policy</a>
+                    
+                         <a href="#">Refund policy</a>
+                         
+                         <a href="#">Terms & conditions</a>
+                         
+                         <a href="#">Promo codes</a>
+
+                         <a href="#">Contact us</a>
+                    </p>
+
+               </div>
+
+               <div class="footer-center">
+
+                    <div>
+                         <img src="Images/Locator.png" style="width: 2.5vw; height: auto;" >
+                         <p>S-412 , kalavad road ,<br> Rajkot , gujarat , India.</p>
+                    </div>
+                    <br>
+                    <div>
+                         <img src="Images/Call.png" style="width: 2vw; height: auto;">
+                         <p>+91 1234567890</p>
+                    </div>
+                    <br>
+                    <div>
+                         <img src="images/Email.png" style="width: 2vw; height: auto;">
+                         <p><a href="mailto:Core_electronics@company.com">core_electronics@company.com</a></p>
+                    </div>
+
+               </div>
+
+               <div class="footer-right">
+
+                    <p class="footer-company-about">
+                         <span>About the company</span>
+                         Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                    </p>
+
+                    <div class="footer-icons">
+
+                         <a href="#"><img src="Images/Facebook.png" style="width: 2.5vw; height: auto; padding-right: 3px;"></a>
+                         <a href="#"><img src="Images/Twitter.png" style="width: 3.1vw; height: auto; padding-right: 3px;"></a>
+                         <a href="#"><img src="Images/Linkedin.png" style="width: 2.9vw; height: auto; padding-left: 6px;"></a>
+                         <a href="#"><img src="Images/Github.png" style="width: 2.5vw; height: auto; padding-right: 3px; padding-left: 6px;"></a>
+
+                    </div>
+
+               </div>
+
+               <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/" style="text-decoration: none; color: white;">Core_electronics.com</a>
+  </div>
+  <hr/>
+  <div align="center" style="color: lightseagreen;">Made with love in india by &#64;Krinabhalodiya</div>
+
+          </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
